@@ -2,9 +2,9 @@ import axios from 'axios'
 
 export function request(config) {
   const instance = new axios.create({
-    baseURL: '',
+    baseURL: 'http://152',
     timeout: 5000
-  });
+  }); 
 
   // 请求拦截器
   instance.interceptors.request.use(config => {
